@@ -13,7 +13,7 @@ export default {
   props: {
     imageSrc: {
       type: String,
-      default: ''
+      default: ' '
     },
     altText: {
       type: String,
@@ -21,7 +21,7 @@ export default {
     },
     placeholderText: {
       type: String,
-      default: 'Imagen'
+      default: 'Materia'
     }
   }
 }
