@@ -77,6 +77,7 @@ export default {
   justify-content: center;
   background-color: var(--color-white);
   margin-bottom: 30px;
+  margin-top: 40px;
 }
 
 .desktop-menu {
