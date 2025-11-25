@@ -85,13 +85,13 @@ export default {
 }
 
 .logo {
-  height: 80px;
+  height: 140px;
   width: auto;
 }
 
 .icon {
-  width: 32px;
-  height: 32px;
+  width: 50px;
+  height: 50px;
   cursor: pointer;
   transition: all 0.3s ease;
 }

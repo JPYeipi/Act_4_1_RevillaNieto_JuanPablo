@@ -6,7 +6,12 @@
       :profile-icon="profileIconPath"
       :button-text="headerButtonText"
     />
-  
+    
+    <MenuComponent 
+      :menu-items="menuItems"
+      :active-item="activeMenuItem"
+      @menu-change="handleMenuChange"
+    />
     
     <FooterComponent 
       :left-text="footerLeftText"
@@ -18,14 +23,15 @@
 
 <script>
 import HeaderComponent from './components/Header.vue'
+import MenuComponent from './components/Menu.vue'
 import FooterComponent from './components/Footer.vue'
-
 
 export default {
   name: 'App',
   components: {
     HeaderComponent,
-    FooterComponent
+    MenuComponent,
+    FooterComponent,
   },
   data() {
     return {
@@ -34,9 +40,20 @@ export default {
       profileIconPath: './src/assets/perfil.svg',
       
       headerButtonText: 'Iniciar Sesión',
+      menuItems: ['INICIO', 'MATERIAL', 'COMUNIDAD', 'FOROS', 'CALENDARIO'],
       footerLeftText: 'AYUDA',
       footerCenterText: 'TÉRMINOS DE SERVICIO',
       footerRightText: 'POLITICA DE PRIVACIDAD',
+      
+      // Estado
+      activeMenuItem: 0,
+      
+    }
+  },
+  methods: {
+    handleMenuChange(index) {
+      this.activeMenuItem = index;
+      console.log('Menú cambiado a:', this.menuItems[index]);
     }
   }
 }
