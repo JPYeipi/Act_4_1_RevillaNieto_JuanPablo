@@ -56,7 +56,6 @@ export default {
   font-size: 14px;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .image-square {
     width: 100px;

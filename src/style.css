@@ -1,8 +1,6 @@
-/* src/style.css */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 :root {
-  /* Colores */
   --color-primary: #0C4891;
   --color-primary-hover: #2A7DE1;
   --color-secondary: #6D91BD;
@@ -11,7 +9,6 @@
   --color-black: #000000;
   --color-gray: #8C8C8C;
   
-  /* Dimensiones */
   --header-height: 154px;
   --menu-height: 60px;
   --footer-height: 50px;

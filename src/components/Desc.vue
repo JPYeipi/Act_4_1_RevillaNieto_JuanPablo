@@ -55,7 +55,6 @@ export default {
   flex: 1;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .content-rectangle {
     width: 100%;

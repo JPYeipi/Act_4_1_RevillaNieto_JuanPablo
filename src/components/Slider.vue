@@ -33,7 +33,6 @@
               </div>
             </div>
             
-            <!-- Sección inferior -->
             <div class="bottom-section">
               <ContentRectangle 
                 :title="currentCard.contentTitle"
@@ -221,7 +220,6 @@ export default {
   background-color: var(--color-primary-hover);
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .inner-content {
     padding: 20px;

@@ -52,7 +52,6 @@ export default {
   margin: 0;
 }
 
-/* Responsive */
 @media (max-width: 908px) {
   .text-rectangle {
     width: 100%;
