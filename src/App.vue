@@ -13,6 +13,16 @@
       @menu-change="handleMenuChange"
     />
     
+    <main class="main-content">
+      <div class="container">
+        <SliderComponent 
+          :cards="sliderCards"
+          :left-arrow="leftArrowPath"
+          :right-arrow="rightArrowPath"
+        />
+      </div>
+    </main>
+    
     <FooterComponent 
       :left-text="footerLeftText"
       :center-text="footerCenterText"
@@ -25,6 +35,7 @@
 import HeaderComponent from './components/Header.vue'
 import MenuComponent from './components/Menu.vue'
 import FooterComponent from './components/Footer.vue'
+import SliderComponent from './components/Slider.vue'
 
 export default {
   name: 'App',
@@ -32,14 +43,17 @@ export default {
     HeaderComponent,
     MenuComponent,
     FooterComponent,
+    SliderComponent
   },
   data() {
     return {
       logoPath: './src/assets/logo.svg',
       infoIconPath: './src/assets/info.svg',
       profileIconPath: './src/assets/perfil.svg',
+      leftArrowPath: './src/assets/izq.svg',
+      rightArrowPath: './src/assets/der.svg',
       
-      headerButtonText: 'Iniciar Sesión',
+      headerButtonText: 'PERFIL',
       menuItems: ['INICIO', 'MATERIAL', 'COMUNIDAD', 'FOROS', 'CALENDARIO'],
       footerLeftText: 'AYUDA',
       footerCenterText: 'TÉRMINOS DE SERVICIO',
@@ -48,6 +62,38 @@ export default {
       // Estado
       activeMenuItem: 0,
       
+      sliderCards: [
+        {
+          title: 'ÁLGEBRA B',
+          subtitle: 'Carlos Vidales',
+          content: 'El álgebra es la rama de las matemáticas que utiliza símbolos (letras) para representar números y cantidades desconocidas, permitiendo estudiar las operaciones aritméticas y las relaciones numéricas de forma general. Su objetivo principal es resolver ecuaciones y modelar problemas de diversas disciplinas como la ingeniería, la economía y la informática. El estudio del álgebra comienza en la educación básica como una forma de introducir el pensamiento abstracto y sentar las bases para conceptos matemáticos más complejos',
+          image: './src/assets/algebraa.jpg'
+        },
+        {
+          title: 'MATEMÁTICAS',
+          subtitle: 'Arturo Sánchez',
+          content: 'Curso especializado en cálculo diferencial e integral. Incluye aplicaciones prácticas en ingeniería y ciencias. Requisitos: Matemáticas Básicas.',
+          image: './src/assets/mate.jpg'        
+        },
+        {
+          title: 'PROGRAMACIÓN WEB',
+          subtitle: 'José Maria Varela',
+          content: 'Desarrollo de aplicaciones web modernas usando HTML5, CSS3, JavaScript y Vue.js. Enfoque en proyectos prácticos y mejores prácticas.',
+          image: './src/assets/web.png'
+        },
+        {
+          title: 'FÍSICA',
+          subtitle: 'Ivan Dávila Puente',
+          content: 'Fundamentos de mecánica clásica, termodinámica y electromagnetismo. Laboratorios virtuales y experimentos prácticos incluidos.',
+          image: './src/assets/fisica.jpg'        
+        },
+        {
+          title: 'INGLÉS',
+          subtitle: 'Alberto López',
+          content: 'Desarrollo de habilidades lingüísticas para contextos académicos. Enfoque en writing académico, presentaciones y comprensión de textos especializados.',
+          image: './src/assets/ingles.png'
+        }
+      ]
     }
   },
   methods: {
