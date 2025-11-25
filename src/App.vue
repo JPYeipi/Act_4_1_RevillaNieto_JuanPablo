@@ -1,5 +1,12 @@
 <template>
   <div id="app">
+    <HeaderComponent 
+      :logo="logoPath"
+      :info-icon="infoIconPath"
+      :profile-icon="profileIconPath"
+      :button-text="headerButtonText"
+    />
+  
     
     <FooterComponent 
       :left-text="footerLeftText"
@@ -10,26 +17,26 @@
 </template>
 
 <script>
-
+import HeaderComponent from './components/Header.vue'
 import FooterComponent from './components/Footer.vue'
 
 
 export default {
   name: 'App',
   components: {
+    HeaderComponent,
     FooterComponent
   },
   data() {
     return {
-
-    
+      logoPath: './src/assets/logo.svg',
+      infoIconPath: './src/assets/info.svg',
+      profileIconPath: './src/assets/perfil.svg',
+      
+      headerButtonText: 'Iniciar Sesión',
       footerLeftText: 'AYUDA',
       footerCenterText: 'TÉRMINOS DE SERVICIO',
       footerRightText: 'POLITICA DE PRIVACIDAD',
-      
-
-      
-
     }
   }
 }

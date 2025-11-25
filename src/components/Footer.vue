@@ -1,4 +1,3 @@
-<!-- src/components/Layout/FooterComponent.vue -->
 <template>
   <footer class="footer">
     <div class="footer-content">
@@ -17,15 +16,12 @@ export default {
   props: {
     leftText: {
       type: String,
-      default: 'Tutorías Académicas 2024'
     },
     centerText: {
       type: String,
-      default: 'Universidad XYZ'
     },
     rightText: {
       type: String,
-      default: 'Contacto: tutorias@universidad.edu'
     }
   }
 }
@@ -60,7 +56,6 @@ export default {
   text-align: center;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .footer-content {
     gap: 15px;
