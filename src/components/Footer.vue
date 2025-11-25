@@ -1,0 +1,82 @@
+<!-- src/components/Layout/FooterComponent.vue -->
+<template>
+  <footer class="footer">
+    <div class="footer-content">
+      <span class="footer-text">{{ leftText }}</span>
+      <span class="separator">|</span>
+      <span class="footer-text">{{ centerText }}</span>
+      <span class="separator">|</span>
+      <span class="footer-text">{{ rightText }}</span>
+    </div>
+  </footer>
+</template>
+
+<script>
+export default {
+  name: 'FooterComponent',
+  props: {
+    leftText: {
+      type: String,
+      default: 'Tutorías Académicas 2024'
+    },
+    centerText: {
+      type: String,
+      default: 'Universidad XYZ'
+    },
+    rightText: {
+      type: String,
+      default: 'Contacto: tutorias@universidad.edu'
+    }
+  }
+}
+</script>
+
+<style scoped>
+.footer {
+  width: 100%;
+  height: var(--footer-height);
+  background-color: var(--color-primary-hover);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: var(--color-white);
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+}
+
+.separator {
+  color: var(--color-white);
+  font-weight: 300;
+}
+
+.footer-text {
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-content {
+    gap: 15px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 5px;
+    font-size: 12px;
+  }
+  
+  .separator {
+    display: none;
+  }
+}
+</style>

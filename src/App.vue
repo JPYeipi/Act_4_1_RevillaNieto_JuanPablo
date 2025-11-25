@@ -1,30 +1,64 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+  <div id="app">
+    
+    <FooterComponent 
+      :left-text="footerLeftText"
+      :center-text="footerCenterText"
+      :right-text="footerRightText"
+    />
   </div>
-  <HelloWorld msg="Vite + Vue" />
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+<script>
+
+import FooterComponent from './components/Footer.vue'
+
+
+export default {
+  name: 'App',
+  components: {
+    FooterComponent
+  },
+  data() {
+    return {
+
+    
+      footerLeftText: 'AYUDA',
+      footerCenterText: 'TÉRMINOS DE SERVICIO',
+      footerRightText: 'POLITICA DE PRIVACIDAD',
+      
+
+      
+
+    }
+  }
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+</script>
+
+<style>
+.main-content {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
 }
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+
+.container {
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-content {
+    padding: 10px;
+  }
 }
 </style>
