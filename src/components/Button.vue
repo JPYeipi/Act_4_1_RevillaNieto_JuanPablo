@@ -1,3 +1,8 @@
+<!-- Boton 
+Este componente es el boton que debe servir para entrar al perfil, debería de estar dentro del 
+componente de Header, se puede reutilizar si queremos hacer cualquier otro botón
+-->
+
 <template>
   <button 
     :class="['custom-button']"
@@ -37,3 +42,4 @@ export default {
 }
 
 </style>
+

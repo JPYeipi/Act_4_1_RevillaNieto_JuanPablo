@@ -1,3 +1,6 @@
+<!-- Footer
+ Este componente es el footer de toda la página, es reutilizable, ya que el footer se debería de 
+ poder ver en cualquier vista de la página, solo nos da información abajo -->
 <template>
   <footer class="footer">
     <div class="footer-content">

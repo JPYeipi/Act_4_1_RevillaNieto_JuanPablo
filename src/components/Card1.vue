@@ -1,3 +1,6 @@
+<!-- Card1
+ Este componente es la parte de más afuera del Slider, nos ayuda a encapsular todos los componentes
+ lo necesito para poder definir el área del Slider -->
 <template>
   <div class="card-background">
     <slot></slot>

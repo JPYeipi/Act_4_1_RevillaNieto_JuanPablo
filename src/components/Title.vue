@@ -1,3 +1,6 @@
+<!-- Title
+ Este componente es simplemente un cuadro de texto, es bastante reutilizable, ya que es responsivo
+ solo es texto. -->
 <template>
   <div class="text-rectangle">
     <h3 v-if="title" class="rectangle-title">{{ title }}</h3>

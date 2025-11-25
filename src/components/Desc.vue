@@ -1,3 +1,6 @@
+<!-- Descripción
+ Este componente es el espacio donde va la descripción de un curso, aquí dentro se puede ver el
+ texto de descripción, la variable se obtiene a través de App.vue -->
 <template>
   <div class="content-rectangle">
     <h4 v-if="title" class="content-title">{{ title }}</h4>

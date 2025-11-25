@@ -1,3 +1,6 @@
+<!-- Menu
+ Este componente se utiliza en todas las vistas, nos ayuda a navegar entre las vistas principales
+ de la página web -->
 <template>
   <nav class="menu">
     <div class="menu-container desktop-menu">

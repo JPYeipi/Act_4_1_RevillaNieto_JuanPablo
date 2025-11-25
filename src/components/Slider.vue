@@ -1,3 +1,8 @@
+<!-- Slider
+ Este componente es muy importante, ya que se compone de todos los elementos antes establecidos
+ o los componentes de texto y de imágenes, nos ayuda a poder visualizar los cursos que hayan sido
+ agendados por los alumnos. No es tan reutilizable, pero se puede usar en cualquier caso que se
+ requiera un slider de texto o de información con titulo, subtitulo, descripción e imagen -->
 <template>
   <div class="slider-container">
     <CardBackground>

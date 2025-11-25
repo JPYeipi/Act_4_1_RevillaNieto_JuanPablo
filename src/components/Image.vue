@@ -1,3 +1,6 @@
+<!-- Image
+ Este es el componente del pequeño cuadradoo que contiene la imagen de cada curso en nuestro slider
+ Por su tamaño puede ser reutilizado para cualquier imagen en la página -->
 <template>
   <div class="image-square">
     <img v-if="imageSrc" :src="imageSrc" :alt="altText" class="square-image">

@@ -1,3 +1,6 @@
+<!-- Card2
+ Este componente es la parte de adentro del Slider, aquí dentro irá toda la información del curso
+para poder ver la información de cada uno de los cursos -->
 <template>
   <div class="inner-card">
     <slot></slot>

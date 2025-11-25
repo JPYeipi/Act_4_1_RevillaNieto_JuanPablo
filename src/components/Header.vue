@@ -1,3 +1,8 @@
+<!-- Header
+ En este componente se encuentran el logo, dos íconos, y otro componente, el cuál es el botón 
+ previamente creado, aqupi se usa de manera que podamos acceder al perfil del usuario. 
+ El header se debería de poder reutilizar en todas las vistas, menos el login. Nos sirve para
+ poder ir al perfil cuando queramos, y consultar información -->
 <template>
   <header class="header">
     <div class="header-content">
