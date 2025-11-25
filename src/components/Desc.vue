@@ -28,7 +28,7 @@ export default {
 <style scoped>
 .content-rectangle {
   width: 1074px;
-  height: 236px;
+  height: 90%;
   background-color: var(--color-white);
   border-radius: var(--card-border-radius);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);

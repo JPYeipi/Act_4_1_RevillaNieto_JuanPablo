@@ -230,7 +230,7 @@ export default {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 508px) {
   .desktop-menu {
     display: none;
   }

@@ -53,7 +53,7 @@ export default {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 908px) {
   .text-rectangle {
     width: 100%;
     height: auto;

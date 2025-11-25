@@ -1,6 +1,7 @@
 <!-- Boton 
 Este componente es el boton que debe servir para entrar al perfil, debería de estar dentro del 
 componente de Header, se puede reutilizar si queremos hacer cualquier otro botón
+Recibe el texto como variable de App.vue, y los estilos son para que sea responsivo y hover
 -->
 
 <template>
@@ -39,6 +40,24 @@ export default {
 
 .custom-button:hover {
   background-color: var(--color-primary-hover);
+}
+
+@media (max-width: 768px) {
+  .custom-button{
+    width: 140px;
+  }
+  .custom-button:hover {
+  background-color: var(--color-primary-hover);
+}
+}
+
+@media (max-width: 480px) {
+  .custom-button {
+    width: 100px;
+  }
+  .custom-button:hover {
+  background-color: var(--color-primary-hover);
+}
 }
 
 </style>

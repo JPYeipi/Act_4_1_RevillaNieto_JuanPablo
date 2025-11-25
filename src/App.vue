@@ -66,7 +66,7 @@ export default {
         {
           title: 'ÁLGEBRA B',
           subtitle: 'Carlos Vidales',
-          content: 'El álgebra es la rama de las matemáticas que utiliza símbolos (letras) para representar números y cantidades desconocidas, permitiendo estudiar las operaciones aritméticas y las relaciones numéricas de forma general. Su objetivo principal es resolver ecuaciones y modelar problemas de diversas disciplinas como la ingeniería, la economía y la informática. El estudio del álgebra comienza en la educación básica como una forma de introducir el pensamiento abstracto y sentar las bases para conceptos matemáticos más complejos',
+          content: 'El álgebra es la rama de las matemáticas que utiliza símbolos (letras) para representar números y cantidades desconocidas, permitiendo estudiar las operaciones aritméticas y las relaciones numéricas de forma general.',
           image: './src/assets/algebraa.jpg'
         },
         {
