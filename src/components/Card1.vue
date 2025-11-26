@@ -14,6 +14,7 @@ export default {
 }
 </script>
 
+<!-- Estilos para card normal -->
 <style scoped>
 .card-background {
   width: 100%;
@@ -26,6 +27,7 @@ export default {
   position: relative;
 }
 
+/* Las variantes solo cambian de tamaño */
 @media (max-width: 768px) {
   .card-background {
     height: auto;

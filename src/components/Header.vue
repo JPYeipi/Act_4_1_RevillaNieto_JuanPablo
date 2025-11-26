@@ -27,6 +27,7 @@
   </header>
 </template>
 
+<!-- Necesita el botón, por lo que recibe la variable de su texto -->
 <script>
 import ButtonComponent from './Button.vue';
 
@@ -57,6 +58,7 @@ export default {
 }
 </script>
 
+<!-- Estilo del Header -->
 <style scoped>
 .header {
   width: 100%;
@@ -113,6 +115,7 @@ export default {
   margin-right: 10px;
 }
 
+/* Cambian las dimensiones, para que seaa legible y entendible */
 @media (max-width: 768px) {
   .header-content {
     padding: 0 15px;

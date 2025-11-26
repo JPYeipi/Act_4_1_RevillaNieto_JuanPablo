@@ -13,6 +13,7 @@ export default {
 }
 </script>
 
+<!-- Estilos para la card normal o default, es la gris interna -->
 <style scoped>
 .inner-card {
   width: 100%;
@@ -24,6 +25,8 @@ export default {
   position: relative;
   margin: 0 auto;
 }
+
+/* Solo cambia de tamaño */
 
 @media (max-width: 768px) {
   .inner-card {

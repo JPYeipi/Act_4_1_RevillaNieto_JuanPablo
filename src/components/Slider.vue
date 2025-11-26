@@ -52,6 +52,7 @@
   </div>
 </template>
 
+<!-- Aquí se importan todos los componentes para crear este componente de Slider -->
 <script>
 import CardBackground from './Card1.vue'
 import InnerCard from './Card2.vue'
@@ -110,6 +111,7 @@ export default {
 }
 </script>
 
+<!-- Estilos normales -->
 <style scoped>
 .slider-container {
   width: 100%;

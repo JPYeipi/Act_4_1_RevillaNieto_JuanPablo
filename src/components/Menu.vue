@@ -22,6 +22,7 @@
       </button>
       
       <div v-if="isMobileMenuOpen" class="mobile-menu-items">
+        <!-- Se controla el boton activo para que quede en esa vista y se cambie ese boton -->
         <button
           v-for="(item, index) in menuItems"
           :key="index"
@@ -35,13 +36,13 @@
   </nav>
 </template>
 
+<!-- Se reciben los textos de cada botón y se hacen las funciones de los menus-->
 <script>
 export default {
   name: 'MenuComponent',
   props: {
     menuItems: {
       type: Array,
-      default: () => ['INICIO', 'MATERIAL', 'COMUNIDAD', 'FOROS', 'CALENDARIO']
     },
     activeItem: {
       type: Number,
@@ -53,7 +54,9 @@ export default {
       isMobileMenuOpen: false
     }
   },
+
   methods: {
+    
     handleMenuClick(index) {
       this.$emit('menu-change', index);
     },
@@ -68,7 +71,7 @@ export default {
   emits: ['menu-change']
 }
 </script>
-
+<!-- Menu normal -->
 <style scoped>
 .menu {
   width: 100%;
@@ -117,6 +120,8 @@ export default {
   background-color: var(--color-primary-hover);
 }
 
+
+/* Se hizo un menu hamburguesaa para la vista movil */
 .mobile-menu {
   display: none;
   width: 100%;
@@ -193,6 +198,7 @@ export default {
 }
 
 
+/* Para la responsividad se cambia la distribucion de los elementos a conveniencia */
 @media (max-width: 1024px) {
   .desktop-menu {
     flex-wrap: wrap;

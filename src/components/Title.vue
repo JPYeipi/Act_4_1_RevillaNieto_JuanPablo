@@ -8,7 +8,7 @@
     <slot></slot>
   </div>
 </template>
-
+<!-- Se recibe la variable de texto -->
 <script>
 export default {
   name: 'TextRectangle',
@@ -52,6 +52,7 @@ export default {
   margin: 0;
 }
 
+/* Estilos responsivos, solo cambia el tamaño de la letra */
 @media (max-width: 908px) {
   .text-rectangle {
     width: 100%;

@@ -10,6 +10,7 @@
   </div>
 </template>
 
+<!-- Cada card recibe su imagen, en este caso del archivo assets -->
 <script>
 export default {
   name: 'ImageSquare',
@@ -29,6 +30,7 @@ export default {
   }
 }
 </script>
+
 
 <style scoped>
 .image-square {
@@ -56,6 +58,7 @@ export default {
   font-size: 14px;
 }
 
+/* La responsividad cambia el tamaño y la distribución */
 @media (max-width: 768px) {
   .image-square {
     width: 100px;

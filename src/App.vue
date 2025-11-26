@@ -47,21 +47,25 @@ export default {
   },
   data() {
     return {
+      //Rutas de las imagenes
       logoPath: './src/assets/logo.svg',
       infoIconPath: './src/assets/info.svg',
       profileIconPath: './src/assets/perfil.svg',
       leftArrowPath: './src/assets/izq.svg',
       rightArrowPath: './src/assets/der.svg',
       
+      //Variables de texto de Footer, Menu, y boton
       headerButtonText: 'PERFIL',
       menuItems: ['INICIO', 'MATERIAL', 'COMUNIDAD', 'FOROS', 'CALENDARIO'],
       footerLeftText: 'AYUDA',
       footerCenterText: 'TÉRMINOS DE SERVICIO',
       footerRightText: 'POLITICA DE PRIVACIDAD',
       
-      // Estado
+      // Estado de menu
       activeMenuItem: 0,
       
+      //Arreglo de Cards, para el Slider de Cards, contiene todo lo necesario, al no haber
+      //backend, base de datos, o formuulario de entrada, se usan variables
       sliderCards: [
         {
           title: 'ÁLGEBRA B',

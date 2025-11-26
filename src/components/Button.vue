@@ -12,6 +12,7 @@ Recibe el texto como variable de App.vue, y los estilos son para que sea respons
   </button>
 </template>
 
+<!-- Recibe la variable del texto -->
 <script>
 export default {
   name: 'ButtonComponent',
@@ -24,6 +25,7 @@ export default {
 </script>
 
 <style scoped>
+/* Estilos del botón en forma default */
 .custom-button {
   width: var(--button-width);
   height: var(--button-height);
@@ -38,10 +40,12 @@ export default {
   transition: all 0.3s ease;
 }
 
+/* Cambio al ser hover */
 .custom-button:hover {
   background-color: var(--color-primary-hover);
 }
 
+/* Variantes de estilo para cuando cambie de tamaño la pantalla */
 @media (max-width: 768px) {
   .custom-button{
     width: 140px;

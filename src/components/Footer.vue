@@ -13,6 +13,7 @@
   </footer>
 </template>
 
+<!-- Recibe desde App.vue el texto que tendrá, este footer siempre será de 3 variables de texto -->
 <script>
 export default {
   name: 'FooterComponent',
@@ -30,6 +31,7 @@ export default {
 }
 </script>
 
+<!-- Estilo default -->
 <style scoped>
 .footer {
   width: 100%;
@@ -50,6 +52,7 @@ export default {
   font-size: 14px;
 }
 
+/* Separador */
 .separator {
   color: var(--color-white);
   font-weight: 300;
@@ -59,6 +62,7 @@ export default {
   text-align: center;
 }
 
+/* Para la responsividad cambia el tamaño y la distribución */
 @media (max-width: 768px) {
   .footer-content {
     gap: 15px;

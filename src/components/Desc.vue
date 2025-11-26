@@ -9,6 +9,7 @@
   </div>
 </template>
 
+<!-- Recibe la variable de descripción de la card para el Slider -->
 <script>
 export default {
   name: 'ContentRectangle',
@@ -25,6 +26,7 @@ export default {
 }
 </script>
 
+<!-- Estilos normales -->
 <style scoped>
 .content-rectangle {
   width: 1074px;
@@ -38,6 +40,8 @@ export default {
   gap: 10px;
 }
 
+
+/* Estilos de texto */
 .content-title {
   font-family: 'Inter', sans-serif;
   font-size: 18px;
@@ -55,6 +59,8 @@ export default {
   flex: 1;
 }
 
+
+/* Estilos responsivos, cambia solo el tamaño del texto */
 @media (max-width: 768px) {
   .content-rectangle {
     width: 100%;
